@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head th:replace="layout/layout :: head"></head>
   <body>
     <header th:replace="layout/layout :: navbar"></header>
@@ -112,6 +112,7 @@
       </div>
     </div>
     <footer th:replace="layout/layout :: footer"></footer>
+    <input type="hidden" id="urlAjax" th:value="@{'/factura/cargar-productos/'}">
     <script
       th:replace="factura/js/autocomplete-productos :: javascript"
     ></script>
